@@ -17,4 +17,7 @@ It uses Selenium in order to deal with javascript, there is a lot of logic assoc
 So we scrap each url, we check if there is a next button that redirects to page 2 of the initial url, if it doesnt then gets to the next url to be scrapped, else it continue to scrap in the catalog of the same initial page until there are no more pages.
 In a nutshell, we are scrapping all urls and all the child urls associated with those, until there are no more.
 
+I use multiprocessing in order to be able to do the process faster, in my case I use 10 CPU's and the process took like 2 hours and 30 minutes.
+
 The project scrapped approximately 11.000 urls and I was able to scrap data from 65k businesses.
+
